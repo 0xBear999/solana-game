@@ -1,150 +1,60 @@
-Contribution: 2020-03-24 20:00
+Fight for power in this ever expanding post apocalyptic universe
 
-Contribution: 2020-03-24 20:01
+## Stack
 
-Contribution: 2020-03-24 20:02
+- Frontend in React
+- Godot Game Engine
+- Web3 Solana Cli wrapper
+- Smart contracts in Rust  https://github.com/ConaGo/SolanaEscrow
+- Backed in Elixir/Phoenix https://github.com/ConaGo/phoenixBackendSolanaGame
 
-Contribution: 2020-03-24 20:03
+# Setup
 
-Contribution: 2020-03-24 20:04
+## Godot linux
 
-Contribution: 2020-03-24 20:05
+1. [download latest godot version for linux](https://godotengine.org/download/linux)
+2. Extract to desktop
+3. rename file to godot
+4. open terminal on desktop
+5. \$ sudo mv ./godot usr/local/bin
+6. open terminal in godot project
+7. \$ godot -e
+8. install HTML5 template
 
-Contribution: 2020-03-24 20:06
+## Webapp
 
-Contribution: 2020-03-24 20:07
+```
+yarn
+```
 
-Contribution: 2020-03-26 20:00
+## solana blockchain
 
-Contribution: 2020-03-26 20:01
+install the solana cli
 
-Contribution: 2020-03-26 20:02
+```
+sh -c "$(curl -sSfL https://release.solana.com/stable/install)"
+```
 
-Contribution: 2020-03-26 20:03
+# Development
 
-Contribution: 2020-03-26 20:04
+## Starting the webapp for development
 
-Contribution: 2020-03-27 20:00
+```
+//start local solana cluster
+solana-test-validator
+//start webapp
+yarn start
+```
 
-Contribution: 2020-03-27 20:01
+## Developing the godot game
 
-Contribution: 2020-03-27 20:02
+To export the godot game to web either run
 
-Contribution: 2020-03-29 20:00
+```
+yarn run export
+```
 
-Contribution: 2020-03-29 20:01
+or
 
-Contribution: 2020-03-29 20:02
-
-Contribution: 2020-03-29 20:03
-
-Contribution: 2020-03-29 20:04
-
-Contribution: 2020-03-29 20:05
-
-Contribution: 2020-03-30 20:00
-
-Contribution: 2020-03-30 20:01
-
-Contribution: 2020-03-30 20:02
-
-Contribution: 2020-03-30 20:03
-
-Contribution: 2020-03-30 20:04
-
-Contribution: 2020-03-30 20:05
-
-Contribution: 2020-03-30 20:06
-
-Contribution: 2020-03-30 20:07
-
-Contribution: 2020-03-30 20:08
-
-Contribution: 2020-04-01 20:00
-
-Contribution: 2020-04-01 20:01
-
-Contribution: 2020-04-01 20:02
-
-Contribution: 2020-04-02 20:00
-
-Contribution: 2020-04-02 20:01
-
-Contribution: 2020-04-02 20:02
-
-Contribution: 2020-04-02 20:03
-
-Contribution: 2020-04-02 20:04
-
-Contribution: 2020-04-04 20:00
-
-Contribution: 2020-04-04 20:01
-
-Contribution: 2020-04-04 20:02
-
-Contribution: 2020-04-04 20:03
-
-Contribution: 2020-04-04 20:04
-
-Contribution: 2020-04-04 20:05
-
-Contribution: 2020-04-04 20:06
-
-Contribution: 2020-04-05 20:00
-
-Contribution: 2020-04-05 20:01
-
-Contribution: 2020-04-05 20:02
-
-Contribution: 2020-04-05 20:03
-
-Contribution: 2020-04-05 20:04
-
-Contribution: 2020-04-05 20:05
-
-Contribution: 2020-04-05 20:06
-
-Contribution: 2020-04-05 20:07
-
-Contribution: 2020-04-05 20:08
-
-Contribution: 2020-04-05 20:09
-
-Contribution: 2020-04-06 20:00
-
-Contribution: 2020-04-06 20:01
-
-Contribution: 2020-04-06 20:02
-
-Contribution: 2020-04-06 20:03
-
-Contribution: 2020-04-08 20:00
-
-Contribution: 2020-04-08 20:01
-
-Contribution: 2020-04-08 20:02
-
-Contribution: 2020-04-08 20:03
-
-Contribution: 2020-04-08 20:04
-
-Contribution: 2020-04-08 20:05
-
-Contribution: 2020-04-08 20:06
-
-Contribution: 2020-04-08 20:07
-
-Contribution: 2020-04-09 20:00
-
-Contribution: 2020-04-09 20:01
-
-Contribution: 2020-04-09 20:02
-
-Contribution: 2020-04-09 20:03
-
-Contribution: 2020-04-09 20:04
-
-Contribution: 2020-04-09 20:05
-
-Contribution: 2020-04-09 20:06
-
+1. Export with html5 template
+2. Replace the game.wasm and game.pck files in the public folder
